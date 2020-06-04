@@ -1,12 +1,38 @@
 * {
     box-sizing: border-box;
-    margin-top: 0px;
+    margin: 0px;
 }
 
 .header {
     margin-top:20px;
     text-align: center;
     font-weight: bold;
+}
+
+.row {
+    width:100%;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+        width: 50%;
+    }
 }
 
 .p1 {
@@ -24,6 +50,7 @@
     background-color: crimson;
     font-weight: 700;
     padding: 5px;
+    width: 100px;
 }
 
 .p3 {
@@ -33,35 +60,12 @@
     background-color: lightgoldenrodyellow;
     font-weight: 700;
     padding: 5px;
+    width: 100px;
 }
 
-.content1 {
-    position: relative;
+.content {
     background-color: grey;
     border: 2px solid black;
-    width: 400px;
-    margin-top: 50px;
-    overflow: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.content2 {
-    position: relative;
-    background-color: grey;
-    border: 2px solid black;
-    width: 400px;
-    margin-top: 50px;
-    overflow: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.content3 {
-    position: relative;
-    background-color: grey;
-    border: 2px solid black;
-    width: 400px;
     margin-top: 50px;
     overflow: auto;
     margin-left: 20px;
